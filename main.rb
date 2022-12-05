@@ -13,5 +13,5 @@ shop = Shop.new(name: SHOP_NAME, items: items)
 user = User.new(money: MONEY)
 
 shop.display
-user.choice
-shop.sell
+item = user.choice(shop.items)
+shop.sell(user, item)
